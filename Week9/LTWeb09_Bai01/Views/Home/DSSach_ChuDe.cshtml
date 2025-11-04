@@ -1,0 +1,60 @@
+﻿@model IEnumerable<LTWeb09_Bai01.Models.Sach>
+@{
+    ViewBag.Title = "Sách Theo Chủ Đề";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center my-4">SÁCH THEO CHỦ ĐỀ</h2>
+
+<style>
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .book-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        padding: 15px;
+        transition: 0.3s;
+        background: #fff;
+    }
+
+        .book-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .book-card img {
+            width: 160px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+    .book-title {
+        font-weight: bold;
+        min-height: 45px;
+        overflow: hidden;
+        display: block;
+        margin-bottom: 8px;
+    }
+</style>
+
+<div class="book-grid">
+    @foreach (var item in Model)
+    {
+        <div class="book-card">
+            <img src="@Url.Content("~/Content/Hinh/" + item.AnhBia)" alt="@item.TenSach" />
+
+            <span class="book-title">@item.TenSach</span>
+
+            @Html.ActionLink("Xem chi tiết", "DetailBook", "Home", new { maSach = item.MaSach },
+                new { @class = "btn btn-outline-primary btn-sm" })
+        </div>
+    }
+</div>

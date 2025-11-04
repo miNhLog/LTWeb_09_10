@@ -1,0 +1,25 @@
+﻿@model IEnumerable<LTWeb09_Bai01.Models.Sach>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main class="container mt-4">
+    <h2 class="text-center mb-4">LIST BOOK</h2>
+
+    <div class="card-container">
+        @foreach (var s in Model)
+        {
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="@Url.Content("~/Content/Hinh/" + s.AnhBia)" width="140" height="170" alt="@s.TenSach" class="card-img" />
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">@s.TenSach</h3>
+                    <a href="~/Home/DetailBook?maSach=@s.MaSach" class="card-button">Xem chi tiết</a>
+                </div>
+            </div>
+        }
+    </div>
+</main>

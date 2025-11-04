@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="~/Content/css/style.css" />
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="form-title">Đăng Nhập</h2>
+
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+            }
+
+            <form method="post" action="~/KhachHang/Login">
+                <div class="form-group">
+                    <label for="loginPhone">Tài khoản</label>
+                    <!-- Name phải giống tham số trong Controller -->
+                    <input type="text" id="loginPhone" name="tk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Mật khẩu</label>
+                    <input type="password" id="loginPassword" name="pass" required>
+                </div>
+
+                <button type="submit" class="form-button">Đăng Nhập</button>
+            </form>
+
+            <div class="form-footer">
+                <p>Chưa có tài khoản? <a href="~//Register">Đăng ký ngay</a></p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

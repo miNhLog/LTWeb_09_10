@@ -1,0 +1,75 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahasa</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")" />
+    <script src="~/Content/js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="~/Content/Hinh/bg1.png" alt="Fahasa" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="~/Home/Index" onclick="showPage('home')">Trang chủ</a></li>
+                        <li><a href="#" onclick="showPage('home')">Liên hệ</a></li>
+                        <li><a href="~/KhachHang/Login" class="btn btn-login">Đăng nhập</a></li>
+                        <li><a href="~/KhachHang/Register" class="btn btn-register">Đăng ký</a></li>
+                    </ul>
+                </nav>
+                <div class="right-controls">
+                    <div class="search-box">
+                        @using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @class = "search-form" }))
+                        {
+                            <input type="text" name="keyword" class="search-input" placeholder="Search" value="@Request.QueryString["keyword"]" />
+                            <button type="submit" class="search-btn">
+                                🔍
+                            </button>
+                        }
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- BODY -->
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>CHỦ ĐỀ SÁCH</h3>
+            <ul>
+                @Html.Action("DSMenu_ChuDe", "Home")
+            </ul>
+
+            <h3>NHÀ XUẤT BẢN</h3>
+            <ul>
+                @Html.Action("DSMenu_NhaXuatBan", "Home")
+            </ul>
+        </aside>
+        <main class="main-content content">
+            <div class="banner">
+                <img src="~/Content/Hinh/bn3.jpg" alt="Banner" class="banner-img" />
+            </div>
+            <div class="page-content">
+                @RenderBody()
+            </div>
+
+        </main>
+    </div>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; Liên hệ Khoa Công Nghệ Thông Tin - Trường Đại học Công Thương TpHCM</p>
+            <p>Địa chỉ: 140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TpHCM</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<LTWeb09_Bai01.Models.NhaXuatBan>
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <a href="@Url.Action("DSSach_NXB", "Home", new {maNXB = item.MaNXB})">@item.TenNXB</a>
+        </li>
+    }
+</ul>
+

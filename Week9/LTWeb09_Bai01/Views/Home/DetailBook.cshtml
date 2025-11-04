@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "DetailBook";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main class="container mt-5">
+    <div class="product-detail">
+        <div class="product-image">
+            <img src="@Url.Content("~/Content/Hinh/" + Model.AnhBia)" width="140" height="170" alt="@Model.TenSach" />
+        </div>
+
+        <div class="product-info">
+            <h2 class="product-title">@Model.TenSach</h2>
+            <p class="product-price">@Model.GiaBan.ToString("N0") ₫</p>
+
+            <p><strong>Nhà xuất bản:</strong> @Model.NhaXuatBan.TenNXB</p>
+            <p><strong>Ngày cập nhật:</strong> @Model.NgayCapNhat?.ToString("dd/MM/yyyy")</p>
+
+            <p><strong>Mô tả:</strong></p>
+            <p>@Model.MoTa</p>
+
+            <div class="product-actions">
+                <a href="@Url.Action("Index", "Home")" class="btn">← Quay lại</a>
+                <button class="btn-buy">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    @if (ViewBag.CungChuDe != null && ViewBag.CungChuDe.Count > 0)
+    {
+        <hr />
+        <h3 class="text-center mt-4 mb-3">Các sách cùng chủ đề</h3>
+
+        <div class="card-container">
+            @foreach (var s in ViewBag.CungChuDe)
+            {
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="@Url.Content("~/Content/Hinh/" + s.AnhBia)" width="140" height="170" class="card-img" />
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">@s.TenSach</h4>
+                        <a href="@Url.Action("DetailBook", "Home", new { maSach = s.MaSach })" class="card-button">Xem chi tiết</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    @if (ViewBag.CungNXB != null && ViewBag.CungNXB.Count > 0)
+    {
+        <hr />
+        <h3 class="text-center mt-4 mb-3">Các sách cùng nhà xuất bản</h3>
+
+        <div class="card-container">
+            @foreach (var s in ViewBag.CungNXB)
+            {
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="@Url.Content("~/Content/Hinh/" + s.AnhBia)" width="140" height="170" class="card-img" />
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">@s.TenSach</h4>
+                        <a href="@Url.Action("DetailBook", "Home", new { maSach = s.MaSach })" class="card-button">Xem chi tiết</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</main>
+

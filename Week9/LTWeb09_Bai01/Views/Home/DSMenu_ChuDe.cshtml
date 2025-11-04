@@ -1,0 +1,10 @@
+﻿@model IEnumerable<LTWeb09_Bai01.Models.ChuDe>
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <a href="@Url.Action("DSSach_ChuDe","Home", new {maCD = item.MaChuDe})">@item.TenChuDe</a>
+        </li>
+    }
+</ul>
