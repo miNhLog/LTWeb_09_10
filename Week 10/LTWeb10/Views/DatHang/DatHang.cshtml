@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Xác nhận đặt hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin đặt hàng</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Họ tên</label>
+    <input type="text" name="HoTen" value="@ViewBag.HoTen" required />
+
+    <label>Số điện thoại</label>
+    <input type="text" name="DienThoai" value="@ViewBag.DienThoai" required />
+
+    <label>Địa chỉ giao hàng</label>
+    <input type="text" name="DiaChi" required />
+
+    <label>Ngày giao</label>
+    <input type="date" name="NgayGiao" required />
+
+    <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
+}

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Online</title>
+    <link rel="stylesheet" href="~/content/css/style.css">
+    <script src="~/content/js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Book Store</div>
+                <div class="search-box">
+                    @using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @class = "search-form" }))
+                    {
+                        <input type="text" name="keyword" class="search-input" placeholder="Nhập từ bạn cần tìm?" value="@Request.QueryString["keyword"]" />
+                        <button type="submit" class="search-btn">🔍</button>
+                    }
+                </div>
+                @{
+                    var kh = Session["TenKH"] as LTWeb10.Models.KhachHang;
+                }
+                <nav>
+                    <ul>
+                        @if (kh != null)
+                        {
+                            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li style="color: white; font-weight:bold, initial;">
+                                Chào bạn, <strong>@kh.TenKH</strong>
+                            </li>
+
+                            <li>
+                                @{
+                                    var gh = Session["gh"] as LTWeb10.Models.GioHang;
+                                    int sl = (gh != null) ? gh.TongSLHang() : 0;
+                                }
+                                <a href="@Url.Action("XemGioHang", "DatHang")" class="btn-cart">
+                                    🛒 Giỏ hàng (@sl)
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="@Url.Action("Logout", "KhachHang")" class="btn btn-login">⏻</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li><a href="#" onclick="showPage('home')">Trang Chủ</a></li>
+                            <li><a href="@Url.Action("Login", "KhachHang")" class="btn btn-login">Đăng nhập</a></li>
+                            <li><a href="@Url.Action("Register", "KhachHang")" class="btn btn-register">Đăng ký ngay</a></li>
+                        }
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+   @RenderBody()
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                    <p>Điện thoại: (0123) 456-789</p>
+                    <p>Email: contact@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Kết Nhanh</h3>
+                    <a href="#">Trang Chủ</a>
+                    <a href="#">Giới Thiệu</a>
+                    <a href="#">Dịch Vụ</a>
+                    <a href="#">Sản Phẩm</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi Chúng Tôi</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tên Công Ty. Tất cả các quyền được bảo lưu. | Phát triển bởi Nhóm Phát Triển</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

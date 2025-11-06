@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|c:\\users\\kieuloan\\documents\\visual studio 2022\\l\u1EADp tr\u00ECnh web\\week 10\\ltweb10\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|c:\\users\\kieuloan\\documents\\visual studio 2022\\l\u1EADp tr\u00ECnh web\\week 10\\ltweb10\\views\\dathang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:views\\dathang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\views\\dathang\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:views\\dathang\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\controllers\\dathangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:controllers\\dathangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2224D1E6-6398-4342-9BD5-0779B2CB07A7}|LTWeb10.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:57:56.406Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\DatHang\\DatHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\DatHang\\DatHang.cshtml",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\DatHang\\DatHang.cshtml",
+              "RelativeToolTip": "Views\\DatHang\\DatHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T12:29:32.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "XemGioHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\DatHang\\XemGioHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\DatHang\\XemGioHang.cshtml",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\DatHang\\XemGioHang.cshtml",
+              "RelativeToolTip": "Views\\DatHang\\XemGioHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T09:31:07.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatHangController.cs",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Controllers\\DatHangController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DatHangController.cs",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Controllers\\DatHangController.cs",
+              "RelativeToolTip": "Controllers\\DatHangController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwCsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:26:38.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Content\\css\\style.css",
+              "RelativeDocumentMoniker": "Content\\css\\style.css",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Content\\css\\style.css",
+              "RelativeToolTip": "Content\\css\\style.css",
+              "ViewState": "AgIAAE4CAAAAAAAAAAAgwGECAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-06T08:02:08.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T07:02:29.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\KIEULOAN\\Documents\\Visual Studio 2022\\L\u1EADp tr\u00ECnh web\\Week 10\\LTWeb10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T06:54:12.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

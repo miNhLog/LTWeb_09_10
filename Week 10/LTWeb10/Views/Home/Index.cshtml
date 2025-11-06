@@ -1,0 +1,42 @@
+﻿@model IEnumerable<LTWeb10.Models.SanPham>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/style.css" />
+
+<h2 class="text-center">Danh sách sản phẩm</h2>
+
+<div class="product-container">
+    @foreach (var sp in Model)
+    {
+        <div class="product-item">
+            <div class="product-img">
+                <img src="@Url.Content("~/Content/Images/"+ sp.HinhAnh)" />
+            </div>
+
+            <h4 class="product-name">@sp.TenSP</h4>
+
+            <p class="product-price">@String.Format("{0:#,##0} VND", sp.DonGia)</p>
+            @{
+                var kh = Session["TenKH"] as LTWeb10.Models.KhachHang;
+            }
+            @if (kh != null)
+            {
+                <a href="@Url.Action("ThemGioHang", "DatHang", new { MaSP = sp.MaSP })" class="btn-buy">
+                    🛒 Chọn Mua
+                </a>
+            }
+            else
+            {
+                <button class="btn-buy" onclick="alert('Bạn phải đăng nhập để mua hàng!')">
+                    🛒 Chọn Mua
+                </button>
+            }
+
+
+        </div>
+    }
+</div>
